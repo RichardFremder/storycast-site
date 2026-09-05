@@ -133,10 +133,8 @@ export const studioPhotos: { src?: string; alt: string; caption: string }[] = [
     caption: "Sylvain, co-animateur",
   },
   {
-    // Dès réception d'une photo de la régie, déposez-la dans
-    // /public/images/ et renseignez son chemin ici.
-    src: undefined,
-    alt: "Régie de montage et post-production",
+    src: "/images/regie-montage.jpg",
+    alt: "Table de mixage de la régie Storycast",
     caption: "La régie de montage",
   },
 ];

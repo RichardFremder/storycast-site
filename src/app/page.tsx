@@ -118,6 +118,21 @@ export default function HomePage() {
               {founder.name}
             </h2>
             <p className="mt-3 text-[15px] text-paper/60">{founder.role}</p>
+
+            <figure className="mt-8 max-w-[280px]">
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src="/images/richard-sudradio.jpg"
+                  alt="Richard Fremder en direct sur Sud Radio"
+                  fill
+                  sizes="280px"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-[13px] text-paper/45">
+                En direct sur Sud Radio
+              </figcaption>
+            </figure>
           </div>
           <div className="space-y-6 text-[16px] leading-relaxed text-paper/75">
             <p>{founder.bio}</p>

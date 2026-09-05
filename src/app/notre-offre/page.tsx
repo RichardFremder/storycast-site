@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { offerCategories, studioPhotos } from "@/lib/content";
 import PhotoSlot from "@/components/PhotoSlot";
 
@@ -76,6 +77,15 @@ export default function OffrePage() {
             <p className="mt-3 text-[15px] text-paper/60">
               Notre offre signature pour le mécénat culturel
             </p>
+            <div className="relative mt-8 hidden aspect-[4/3] w-full overflow-hidden md:block">
+              <Image
+                src="/images/lieu-histoire.jpg"
+                alt="Captation Storycast dans un salon historique parisien, pour l'offre Lieu d'Histoire"
+                fill
+                sizes="360px"
+                className="object-cover"
+              />
+            </div>
           </div>
           <div className="space-y-6 text-[16px] leading-relaxed text-paper/75">
             <p>
@@ -90,6 +100,15 @@ export default function OffrePage() {
               la co-animation, l&rsquo;invitation d&rsquo;experts et la
               gestion d&rsquo;entretiens, pour enrichir vos contenus.
             </p>
+            <div className="relative mt-2 aspect-[4/3] w-full overflow-hidden md:hidden">
+              <Image
+                src="/images/lieu-histoire.jpg"
+                alt="Captation Storycast dans un salon historique parisien, pour l'offre Lieu d'Histoire"
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
