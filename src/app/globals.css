@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0b0d12;
+  --ink-soft: #14171f;
+  --paper: #f1ece1;
+  --paper-dim: #e7e0d0;
+  --brass: #b8863e;
+  --brass-light: #d4ab6c;
+  --signal: #a63a2e;
+  --stone-70: #4a4740;
+  --stone-40: #8a8578;
+  --line: #d8cfbb;
+  --line-dark: #262b36;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-brass: var(--brass);
+  --color-brass-light: var(--brass-light);
+  --color-signal: var(--signal);
+  --color-stone-70: var(--stone-70);
+  --color-stone-40: var(--stone-40);
+  --color-line: var(--line);
+  --color-line-dark: var(--line-dark);
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container-edit {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-edit {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.rule {
+  height: 1px;
+  background: var(--line);
+}
+
+/* focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
