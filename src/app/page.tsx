@@ -11,8 +11,9 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="container-edit pt-20 pb-16 md:pt-32 md:pb-24">
           <h1 className="max-w-4xl font-display text-[2.5rem] leading-[1.08] tracking-tight text-ink sm:text-6xl md:text-7xl">
-            Chez Storycast, l&rsquo;audio, c&rsquo;est du sérieux…
-            <br className="hidden md:block" /> mais jamais ennuyeux.
+            Chez Storycast,
+            <br /> l&rsquo;audio, c&rsquo;est du sérieux…
+            <br /> mais jamais ennuyeux !
           </h1>
           <p className="mt-8 max-w-xl text-[17px] leading-relaxed text-stone-70 md:text-lg">
             Studio de production audio basé à Paris. Nous concevons,
