@@ -55,6 +55,14 @@ existants) pour que Vercel republie automatiquement.
   contient un modèle à compléter avec la raison sociale exacte, le SIRET,
   l'adresse du siège et l'email de contact de Storycast.
 
+## Ajouter vos photos
+
+Le dossier `public/images/` est prêt à recevoir vos photos (portrait de
+Richard, vues du studio). Un fichier `public/images/README.md` explique
+exactement quoi déposer et où le déclarer dans `src/lib/content.ts`. Tant
+qu'aucune photo n'est fournie, le site affiche un motif graphique de
+repli — jamais de cadre vide ni d'image cassée.
+
 ## Contenu du site
 
 Tout le texte "métier" (émissions, chiffres clés, offres) est centralisé

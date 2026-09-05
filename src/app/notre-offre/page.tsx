@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { offerCategories } from "@/lib/content";
+import { offerCategories, studioPhotos } from "@/lib/content";
+import PhotoSlot from "@/components/PhotoSlot";
 
 export const metadata: Metadata = {
   title: "Notre offre",
@@ -48,6 +49,19 @@ export default function OffrePage() {
                 {cat.description}
               </p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-line py-14 md:py-16">
+        <div className="container-edit grid gap-8 sm:grid-cols-3">
+          {studioPhotos.map((photo) => (
+            <PhotoSlot
+              key={photo.caption}
+              src={photo.src}
+              alt={photo.alt}
+              caption={photo.caption}
+            />
           ))}
         </div>
       </section>

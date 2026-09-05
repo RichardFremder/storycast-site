@@ -118,7 +118,28 @@ export const founder = {
   name: "Richard Fremder",
   role: "Historien, chroniqueur radio et CEO de Storycast",
   bio: "Depuis presque 15 ans, Richard anime et prête sa voix au programme d'Histoire « Timeline, l'Histoire en Podcast », avec un objectif simple : rendre l'Histoire du Monde accessible au plus grand nombre, petits et grands.",
+  photo: "/images/richard-fremder.png",
 };
+
+export const studioPhotos: { src?: string; alt: string; caption: string }[] = [
+  {
+    src: "/images/studio-cabine.jpg",
+    alt: "Cabine d'enregistrement Storycast, quatre places face à l'animateur",
+    caption: "La cabine d'enregistrement",
+  },
+  {
+    src: "/images/sylvain-co-animateur.jpg",
+    alt: "Sylvain, co-animateur, au micro dans le studio Storycast",
+    caption: "Sylvain, co-animateur",
+  },
+  {
+    // Dès réception d'une photo de la régie, déposez-la dans
+    // /public/images/ et renseignez son chemin ici.
+    src: undefined,
+    alt: "Régie de montage et post-production",
+    caption: "La régie de montage",
+  },
+];
 
 export const contactInfo = {
   city: "Paris",

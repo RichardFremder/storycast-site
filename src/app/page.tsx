@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import Waveform from "@/components/Waveform";
+import DialBackdrop from "@/components/DialBackdrop";
+import PortraitMedallion from "@/components/PortraitMedallion";
 import StatsBand from "@/components/StatsBand";
 import ShowRail from "@/components/ShowRail";
 import { founder } from "@/lib/content";
@@ -9,6 +12,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
+        <DialBackdrop />
         <div className="container-edit pt-20 pb-16 md:pt-32 md:pb-24">
           <h1 className="max-w-4xl font-display text-[2.5rem] leading-[1.08] tracking-tight text-ink sm:text-6xl md:text-7xl">
             Chez Storycast,
@@ -78,13 +82,39 @@ export default function HomePage() {
 
       <div className="rule container-edit" />
 
+      {/* Aperçu du studio */}
+      <section className="py-20 md:py-28">
+        <div className="container-edit">
+          <div className="relative aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
+            <Image
+              src="/images/studio-cabine.jpg"
+              alt="La cabine d'enregistrement du studio Storycast, à Paris"
+              fill
+              sizes="(min-width: 768px) 1180px, 100vw"
+              className="object-cover"
+              priority={false}
+            />
+          </div>
+          <p className="mt-4 text-[14px] text-stone-40">
+            Notre cabine d&rsquo;enregistrement, à Paris — jusqu&rsquo;à 4
+            voix face à l&rsquo;animateur.
+          </p>
+        </div>
+      </section>
+
       <ShowRail />
 
       {/* Fondateur */}
       <section className="border-t border-line bg-ink py-24 text-paper md:py-32">
-        <div className="container-edit grid gap-10 md:grid-cols-[1fr_1.2fr] md:gap-16">
+        <div className="container-edit grid gap-10 md:grid-cols-[280px_1fr] md:gap-16">
           <div>
-            <h2 className="font-display text-3xl leading-tight md:text-4xl">
+            <PortraitMedallion
+              src={founder.photo}
+              alt={founder.name}
+              initials="RF"
+              tone="dark"
+            />
+            <h2 className="mt-6 font-display text-3xl leading-tight md:text-4xl">
               {founder.name}
             </h2>
             <p className="mt-3 text-[15px] text-paper/60">{founder.role}</p>
