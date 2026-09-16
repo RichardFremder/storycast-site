@@ -68,44 +68,4 @@ export default function MentionsLegalesPage() {
       </div>
     </section>
   );
-}              Contact : [adresse email de contact]
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-display text-xl text-ink">Hébergement</h2>
-            <p className="mt-3">
-              Vercel Inc. — 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-display text-xl text-ink">
-              Propriété intellectuelle
-            </h2>
-            <p className="mt-3">
-              L&rsquo;ensemble des contenus présents sur ce site (textes,
-              images, émissions, logos) est la propriété de Storycast ou de
-              ses partenaires, sauf mention contraire, et ne peut être
-              reproduit sans autorisation préalable.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-display text-xl text-ink">
-              Données personnelles
-            </h2>
-            <p className="mt-3">
-              Les informations recueillies via le formulaire de contact sont
-              utilisées uniquement pour répondre à votre demande, sur la base
-              de l&rsquo;intérêt légitime de Storycast à échanger avec ses
-              prospects et partenaires professionnels. Conformément au RGPD,
-              vous disposez d&rsquo;un droit d&rsquo;accès, de rectification
-              et de suppression de vos données en écrivant à [adresse email].
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
 }
