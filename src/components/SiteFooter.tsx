@@ -49,12 +49,12 @@ export default function SiteFooter() {
             <ul className="mt-4 space-y-3 text-[15px] text-paper/80">
               <li>
                 <a
-                  href="http://www.timelinepodcast.fr"
+                  href="http://www.timeline-story.fr"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-paper transition-colors"
                 >
-                  timelinepodcast.fr
+                  timeline-story.fr
                 </a>
               </li>
               <li>
