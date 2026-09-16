@@ -5,7 +5,7 @@ import { useState, type FormEvent } from "react";
 // Remplacez cette valeur par l'URL de formulaire fournie par Formspree
 // (https://formspree.io) une fois votre compte créé — voir le README
 // pour la marche à suivre pas à pas, sans ligne de commande.
-const FORM_ENDPOINT = "https://formspree.io/f/VOTRE_ID_FORMSPREE";
+const FORM_ENDPOINT = "https://formspree.io/f/xaenwrok";
 
 type Status = "idle" | "sending" | "success" | "error";
 
