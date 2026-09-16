@@ -54,7 +54,7 @@ export default function SiteFooter() {
                   rel="noreferrer"
                   className="hover:text-paper transition-colors"
                 >
-                  timeline-story.fr
+                  Timeline Story
                 </a>
               </li>
               <li>
